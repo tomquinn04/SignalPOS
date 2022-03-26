@@ -64,4 +64,19 @@ begin
   end;
 end;
 
+procedure TFrameNumberpad.HandleNumberClick(number: Integer; Sender: TObject);
+begin
+  if Assigned(OnNumberClick) then OnNumberClick(number);
+end;
+
+procedure TFrameNumberpad.HandleBackspaceClick(Sender: TObject);
+begin
+  if Assigned(OnBackspaceClick) then OnBackspaceClick;
+end;
+
+procedure TFrameNumberpad.HandleEnterClick(Sender: TObject);
+begin
+  if Assigned(OnEnterClick) then OnEnterClick;
+  
+end;
 end.

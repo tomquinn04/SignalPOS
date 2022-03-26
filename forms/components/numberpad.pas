@@ -15,8 +15,7 @@ type
 
   // frame
   TFrameNumberpad = class(TFrame)
-    // controls
-    GridPanelLayout1: TGridPanelLayout;
+    GridNumberPad: TGridPanelLayout;
     Btn1: TButton;
     Btn2: TButton;
     Btn3: TButton;

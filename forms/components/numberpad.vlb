@@ -11,9 +11,6 @@ Coordinates=227,10,40,51
 [Btn1]
 Coordinates=60,71,40,51
 
-[GridPanelLayout1]
-Coordinates=310,71,102,33
-
 [Btn2]
 Coordinates=10,71,40,51
 
@@ -40,4 +37,7 @@ Coordinates=110,71,40,51
 
 []
 Coordinates=433,1,82,33
+
+[GridNumberPad]
+Coordinates=310,71,102,33
 

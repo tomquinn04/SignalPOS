@@ -2,7 +2,7 @@ object FrameNumberpad: TFrameNumberpad
   Size.Width = 320.000000000000000000
   Size.Height = 240.000000000000000000
   Size.PlatformDefault = False
-  object GridPanelLayout1: TGridPanelLayout
+  object GridNumberPad: TGridPanelLayout
     Align = Client
     Size.Width = 320.000000000000000000
     Size.Height = 240.000000000000000000

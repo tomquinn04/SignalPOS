@@ -1,3 +1,11 @@
 inherited Form1_Windows: TForm1_Windows
+  ClientHeight = 564
+  ClientWidth = 792
   DesignerMasterStyle = 0
+  inherited Image1: TImage
+    MultiResBitmap.Height = 1100
+    MultiResBitmap.Width = 4500
+    Position.X = 24.000000000000000000
+    Position.Y = 48.000000000000000000
+  end
 end

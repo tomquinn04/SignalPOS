@@ -1,0 +1,264 @@
+object FrameNumberpad: TFrameNumberpad
+  Size.Width = 320.000000000000000000
+  Size.Height = 240.000000000000000000
+  Size.PlatformDefault = False
+  object GridPanelLayout1: TGridPanelLayout
+    Align = Client
+    Size.Width = 320.000000000000000000
+    Size.Height = 240.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    ColumnCollection = <
+      item
+        Value = 33.333333333333340000
+      end
+      item
+        Value = 33.333333333333340000
+      end
+      item
+        Value = 33.333333333333340000
+      end>
+    ControlCollection = <
+      item
+        Column = 0
+        Control = Btn1
+        Row = 0
+      end
+      item
+        Column = 1
+        Control = Btn2
+        Row = 0
+      end
+      item
+        Column = 2
+        Control = Btn3
+        Row = 0
+      end
+      item
+        Column = 0
+        Control = Btn4
+        Row = 1
+      end
+      item
+        Column = 1
+        Control = Btn5
+        Row = 1
+      end
+      item
+        Column = 2
+        Control = Btn6
+        Row = 1
+      end
+      item
+        Column = 0
+        Control = Btn7
+        Row = 2
+      end
+      item
+        Column = 1
+        Control = Btn8
+        Row = 2
+      end
+      item
+        Column = 2
+        Control = Btn9
+        Row = 2
+      end
+      item
+        Column = 0
+        Control = BtnBack
+        Row = 3
+      end
+      item
+        Column = 1
+        Control = Btn0
+        Row = 3
+      end
+      item
+        Column = 2
+        Control = BtnEnter
+        Row = 3
+      end>
+    RowCollection = <
+      item
+        Value = 25.000000000000000000
+      end
+      item
+        Value = 25.000000000000000000
+      end
+      item
+        Value = 25.000000000000000000
+      end
+      item
+        Value = 25.000000000000000000
+      end>
+    object Btn1: TButton
+      Align = Client
+      StyledSettings = [Family, Style, FontColor]
+      Margins.Left = 3.000000000000000000
+      Margins.Top = 3.000000000000000000
+      Margins.Right = 3.000000000000000000
+      Margins.Bottom = 3.000000000000000000
+      Size.Width = 100.666664123535200000
+      Size.Height = 54.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 11
+      Text = '1'
+      TextSettings.Font.Size = 40.000000000000000000
+    end
+    object Btn2: TButton
+      Align = Client
+      StyledSettings = [Family, Style, FontColor]
+      Margins.Left = 3.000000000000000000
+      Margins.Top = 3.000000000000000000
+      Margins.Right = 3.000000000000000000
+      Margins.Bottom = 3.000000000000000000
+      Size.Width = 100.666664123535200000
+      Size.Height = 54.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 10
+      Text = '2'
+      TextSettings.Font.Size = 40.000000000000000000
+    end
+    object Btn3: TButton
+      Align = Client
+      StyledSettings = [Family, Style, FontColor]
+      Margins.Left = 3.000000000000000000
+      Margins.Top = 3.000000000000000000
+      Margins.Right = 3.000000000000000000
+      Margins.Bottom = 3.000000000000000000
+      Size.Width = 100.666671752929700000
+      Size.Height = 54.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 9
+      Text = '3'
+      TextSettings.Font.Size = 40.000000000000000000
+    end
+    object Btn4: TButton
+      Align = Client
+      StyledSettings = [Family, Style, FontColor]
+      Margins.Left = 3.000000000000000000
+      Margins.Top = 3.000000000000000000
+      Margins.Right = 3.000000000000000000
+      Margins.Bottom = 3.000000000000000000
+      Size.Width = 100.666664123535200000
+      Size.Height = 54.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 8
+      Text = '4'
+      TextSettings.Font.Size = 40.000000000000000000
+    end
+    object Btn5: TButton
+      Align = Client
+      StyledSettings = [Family, Style, FontColor]
+      Margins.Left = 3.000000000000000000
+      Margins.Top = 3.000000000000000000
+      Margins.Right = 3.000000000000000000
+      Margins.Bottom = 3.000000000000000000
+      Size.Width = 100.666664123535200000
+      Size.Height = 54.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 7
+      Text = '5'
+      TextSettings.Font.Size = 40.000000000000000000
+    end
+    object Btn6: TButton
+      Align = Client
+      StyledSettings = [Family, Style, FontColor]
+      Margins.Left = 3.000000000000000000
+      Margins.Top = 3.000000000000000000
+      Margins.Right = 3.000000000000000000
+      Margins.Bottom = 3.000000000000000000
+      Size.Width = 100.666671752929700000
+      Size.Height = 54.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 6
+      Text = '6'
+      TextSettings.Font.Size = 40.000000000000000000
+    end
+    object Btn7: TButton
+      Align = Client
+      StyledSettings = [Family, Style, FontColor]
+      Margins.Left = 3.000000000000000000
+      Margins.Top = 3.000000000000000000
+      Margins.Right = 3.000000000000000000
+      Margins.Bottom = 3.000000000000000000
+      Size.Width = 100.666664123535200000
+      Size.Height = 54.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 5
+      Text = '7'
+      TextSettings.Font.Size = 40.000000000000000000
+    end
+    object Btn8: TButton
+      Align = Client
+      StyledSettings = [Family, Style, FontColor]
+      Margins.Left = 3.000000000000000000
+      Margins.Top = 3.000000000000000000
+      Margins.Right = 3.000000000000000000
+      Margins.Bottom = 3.000000000000000000
+      Size.Width = 100.666664123535200000
+      Size.Height = 54.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 4
+      Text = '8'
+      TextSettings.Font.Size = 40.000000000000000000
+    end
+    object Btn9: TButton
+      Align = Client
+      StyledSettings = [Family, Style, FontColor]
+      Margins.Left = 3.000000000000000000
+      Margins.Top = 3.000000000000000000
+      Margins.Right = 3.000000000000000000
+      Margins.Bottom = 3.000000000000000000
+      Size.Width = 100.666671752929700000
+      Size.Height = 54.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 3
+      Text = '9'
+      TextSettings.Font.Size = 40.000000000000000000
+    end
+    object BtnBack: TButton
+      Align = Client
+      StyledSettings = [Family, Style, FontColor]
+      Margins.Left = 3.000000000000000000
+      Margins.Top = 3.000000000000000000
+      Margins.Right = 3.000000000000000000
+      Margins.Bottom = 3.000000000000000000
+      Size.Width = 100.666664123535200000
+      Size.Height = 54.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      Text = #9003
+      TextSettings.Font.Size = 40.000000000000000000
+    end
+    object Btn0: TButton
+      Align = Client
+      StyledSettings = [Family, Style, FontColor]
+      Margins.Left = 3.000000000000000000
+      Margins.Top = 3.000000000000000000
+      Margins.Right = 3.000000000000000000
+      Margins.Bottom = 3.000000000000000000
+      Size.Width = 100.666664123535200000
+      Size.Height = 54.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      Text = '0'
+      TextSettings.Font.Size = 40.000000000000000000
+    end
+    object BtnEnter: TButton
+      Align = Client
+      StyledSettings = [Family, Style, FontColor]
+      Margins.Left = 3.000000000000000000
+      Margins.Top = 3.000000000000000000
+      Margins.Right = 3.000000000000000000
+      Margins.Bottom = 3.000000000000000000
+      Size.Width = 100.666671752929700000
+      Size.Height = 54.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = #9094
+      TextSettings.Font.Size = 40.000000000000000000
+    end
+  end
+end

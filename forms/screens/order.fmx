@@ -1,0 +1,94 @@
+object FrameOrder: TFrameOrder
+  Size.Width = 1000.000000000000000000
+  Size.Height = 600.000000000000000000
+  Size.PlatformDefault = False
+  object GridPanelLayout1: TGridPanelLayout
+    Align = Client
+    Size.Width = 1000.000000000000000000
+    Size.Height = 600.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    ColumnCollection = <
+      item
+        Value = 70.002087850978580000
+      end
+      item
+        Value = 4.999213652873173000
+      end
+      item
+        Value = 4.999454608532035000
+      end
+      item
+        Value = 4.999642454123301000
+      end
+      item
+        Value = 4.999778088854329000
+      end
+      item
+        Value = 4.999876015122370000
+      end
+      item
+        Value = 4.999947329516224000
+      end>
+    ControlCollection = <
+      item
+        Column = 0
+        Control = FrameItemGrid1
+        Row = 0
+      end
+      item
+        Column = 6
+        Control = BtnLogout
+        Row = 0
+      end>
+    RowCollection = <
+      item
+        Value = 9.999999999991045000
+      end
+      item
+        Value = 10.000000000017320000
+      end
+      item
+        Value = 10.000000000025720000
+      end
+      item
+        Value = 10.000000000018400000
+      end
+      item
+        Value = 10.000000000003640000
+      end
+      item
+        Value = 9.999999999990269000
+      end
+      item
+        Value = 9.999999999983617000
+      end
+      item
+        Value = 9.999999999984347000
+      end
+      item
+        Value = 9.999999999989726000
+      end
+      item
+        Value = 9.999999999995920000
+      end>
+    inline FrameItemGrid1: TFrameItemGrid
+      Size.Width = 500.000000000000000000
+      Size.Height = 17.558298110961910000
+      Size.PlatformDefault = False
+      inherited FlowLayout1: TFlowLayout
+        Size.Width = 500.000000000000000000
+        Size.Height = 17.558298110961910000
+      end
+    end
+    object BtnLogout: TSpeedButton
+      Align = Client
+      Size.Width = 49.999450683593750000
+      Size.Height = 60.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'escapetoolbuttonbordered'
+      Text = 'Log Out'
+      OnClick = BtnLogoutClick
+    end
+  end
+end

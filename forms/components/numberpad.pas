@@ -9,9 +9,9 @@ uses
 
 type
   // events
-  TEventOnNumberClick = procedure(number : integer);
-  TEventOnEnterClick = procedure();
-  TEventOnBackspaceClick = procedure();
+  TEventOnNumberClick = procedure(number : integer) of object;
+  TEventOnEnterClick = procedure() of object;
+  TEventOnBackspaceClick = procedure() of object;
 
   // frame
   TFrameNumberpad = class(TFrame)
@@ -66,7 +66,8 @@ end;
 
 procedure TFrameNumberpad.HandleNumberClick(number: Integer; Sender: TObject);
 begin
-  if Assigned(OnNumberClick) then OnNumberClick(number);
+  if Assigned(OnNumberClick) then OnNumberClick(number)
+  else ShowMessage('unassigned');
 end;
 
 procedure TFrameNumberpad.HandleBackspaceClick(Sender: TObject);

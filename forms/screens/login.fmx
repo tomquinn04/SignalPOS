@@ -1,11 +1,13 @@
 object FrameLogin: TFrameLogin
-  Size.Width = 692.000000000000000000
-  Size.Height = 468.000000000000000000
+  Size.Width = 1000.000000000000000000
+  Size.Height = 600.000000000000000000
   Size.PlatformDefault = False
+  OnKeyDown = FrameKeyDown
+  OnPaint = FramePaint
   object GridLoginRoot: TGridPanelLayout
     Align = Client
-    Size.Width = 692.000000000000000000
-    Size.Height = 468.000000000000000000
+    Size.Width = 1000.000000000000000000
+    Size.Height = 600.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 0
     ColumnCollection = <
@@ -27,8 +29,8 @@ object FrameLogin: TFrameLogin
       end>
     object GridLoginRight: TGridPanelLayout
       Align = Client
-      Size.Width = 346.000000000000000000
-      Size.Height = 468.000000000000000000
+      Size.Width = 500.000000000000000000
+      Size.Height = 600.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 0
       ColumnCollection = <
@@ -38,7 +40,7 @@ object FrameLogin: TFrameLogin
       ControlCollection = <
         item
           Column = 0
-          Control = FrameNumberpad1
+          Control = GridPINPad
           Row = 0
         end>
       RowCollection = <
@@ -48,125 +50,195 @@ object FrameLogin: TFrameLogin
         item
           Value = 50.000000000000000000
         end>
-      inline FrameNumberpad1: TFrameNumberpad
+      object GridPINPad: TGridPanelLayout
         Align = Client
-        Size.Width = 346.000000000000000000
-        Size.Height = 234.000000000000000000
+        Size.Width = 500.000000000000000000
+        Size.Height = 300.000000000000000000
         Size.PlatformDefault = False
-        inherited GridNumberPad: TGridPanelLayout
-          Size.Width = 346.000000000000000000
-          Size.Height = 234.000000000000000000
-          ControlCollection = <
-            item
-              Column = 0
-              Control = FrameNumberpad1.Btn1
-              Row = 0
+        TabOrder = 0
+        ColumnCollection = <
+          item
+            Value = 100.000000000000000000
+          end>
+        ControlCollection = <
+          item
+            Column = 0
+            Control = FrameNumberpad1
+            Row = 2
+          end
+          item
+            Column = 0
+            Control = LblLogin
+            Row = 0
+          end
+          item
+            Column = 0
+            Control = LblPinFeedback
+            Row = 1
+          end>
+        RowCollection = <
+          item
+            Value = 10.918978085980620000
+          end
+          item
+            Value = 22.127281741232680000
+          end
+          item
+            Value = 66.953740172786710000
+          end>
+        inline FrameNumberpad1: TFrameNumberpad
+          Align = Fit
+          Size.Width = 200.861206054687500000
+          Size.Height = 200.861206054687500000
+          Size.PlatformDefault = False
+          inherited GridNumberPad: TGridPanelLayout
+            Size.Width = 200.861206054687500000
+            Size.Height = 200.861206054687500000
+            ControlCollection = <
+              item
+                Column = 0
+                Control = FrameNumberpad1.Btn1
+                Row = 0
+              end
+              item
+                Column = 1
+                Control = FrameNumberpad1.Btn2
+                Row = 0
+              end
+              item
+                Column = 2
+                Control = FrameNumberpad1.Btn3
+                Row = 0
+              end
+              item
+                Column = 0
+                Control = FrameNumberpad1.Btn4
+                Row = 1
+              end
+              item
+                Column = 1
+                Control = FrameNumberpad1.Btn5
+                Row = 1
+              end
+              item
+                Column = 2
+                Control = FrameNumberpad1.Btn6
+                Row = 1
+              end
+              item
+                Column = 0
+                Control = FrameNumberpad1.Btn7
+                Row = 2
+              end
+              item
+                Column = 1
+                Control = FrameNumberpad1.Btn8
+                Row = 2
+              end
+              item
+                Column = 2
+                Control = FrameNumberpad1.Btn9
+                Row = 2
+              end
+              item
+                Column = 0
+                Control = FrameNumberpad1.BtnBack
+                Row = 3
+              end
+              item
+                Column = 1
+                Control = FrameNumberpad1.Btn0
+                Row = 3
+              end
+              item
+                Column = 2
+                Control = FrameNumberpad1.BtnEnter
+                Row = 3
+              end>
+            inherited Btn1: TButton
+              Size.Width = 60.953735351562500000
+              Size.Height = 44.215301513671880000
             end
-            item
-              Column = 1
-              Control = FrameNumberpad1.Btn2
-              Row = 0
+            inherited Btn2: TButton
+              Size.Width = 60.953735351562500000
+              Size.Height = 44.215301513671880000
             end
-            item
-              Column = 2
-              Control = FrameNumberpad1.Btn3
-              Row = 0
+            inherited Btn3: TButton
+              Size.Width = 60.953735351562500000
+              Size.Height = 44.215301513671880000
             end
-            item
-              Column = 0
-              Control = FrameNumberpad1.Btn4
-              Row = 1
+            inherited Btn4: TButton
+              Size.Width = 60.953735351562500000
+              Size.Height = 44.215301513671880000
             end
-            item
-              Column = 1
-              Control = FrameNumberpad1.Btn5
-              Row = 1
+            inherited Btn5: TButton
+              Size.Width = 60.953735351562500000
+              Size.Height = 44.215301513671880000
             end
-            item
-              Column = 2
-              Control = FrameNumberpad1.Btn6
-              Row = 1
+            inherited Btn6: TButton
+              Size.Width = 60.953735351562500000
+              Size.Height = 44.215301513671880000
             end
-            item
-              Column = 0
-              Control = FrameNumberpad1.Btn7
-              Row = 2
+            inherited Btn7: TButton
+              Size.Width = 60.953735351562500000
+              Size.Height = 44.215301513671880000
             end
-            item
-              Column = 1
-              Control = FrameNumberpad1.Btn8
-              Row = 2
+            inherited Btn8: TButton
+              Size.Width = 60.953735351562500000
+              Size.Height = 44.215301513671880000
             end
-            item
-              Column = 2
-              Control = FrameNumberpad1.Btn9
-              Row = 2
+            inherited Btn9: TButton
+              Size.Width = 60.953735351562500000
+              Size.Height = 44.215301513671880000
             end
-            item
-              Column = 0
-              Control = FrameNumberpad1.BtnBack
-              Row = 3
+            inherited BtnBack: TButton
+              Size.Width = 60.953735351562500000
+              Size.Height = 44.215301513671880000
             end
-            item
-              Column = 1
-              Control = FrameNumberpad1.Btn0
-              Row = 3
+            inherited Btn0: TButton
+              Size.Width = 60.953735351562500000
+              Size.Height = 44.215301513671880000
             end
-            item
-              Column = 2
-              Control = FrameNumberpad1.BtnEnter
-              Row = 3
-            end>
-          inherited Btn1: TButton
-            Size.Width = 109.333335876464800000
-            Size.Height = 52.500000000000000000
+            inherited BtnEnter: TButton
+              Size.Width = 60.953735351562500000
+              Size.Height = 44.215301513671880000
+            end
           end
-          inherited Btn2: TButton
-            Size.Width = 109.333335876464800000
-            Size.Height = 52.500000000000000000
-          end
-          inherited Btn3: TButton
-            Size.Width = 109.333328247070300000
-            Size.Height = 52.500000000000000000
-          end
-          inherited Btn4: TButton
-            Size.Width = 109.333335876464800000
-            Size.Height = 52.500000000000000000
-          end
-          inherited Btn5: TButton
-            Size.Width = 109.333335876464800000
-            Size.Height = 52.500000000000000000
-          end
-          inherited Btn6: TButton
-            Size.Width = 109.333328247070300000
-            Size.Height = 52.500000000000000000
-          end
-          inherited Btn7: TButton
-            Size.Width = 109.333335876464800000
-            Size.Height = 52.500000000000000000
-          end
-          inherited Btn8: TButton
-            Size.Width = 109.333335876464800000
-            Size.Height = 52.500000000000000000
-          end
-          inherited Btn9: TButton
-            Size.Width = 109.333328247070300000
-            Size.Height = 52.500000000000000000
-          end
-          inherited BtnBack: TButton
-            Size.Width = 109.333335876464800000
-            Size.Height = 52.500000000000000000
-          end
-          inherited Btn0: TButton
-            Size.Width = 109.333335876464800000
-            Size.Height = 52.500000000000000000
-          end
-          inherited BtnEnter: TButton
-            Size.Width = 109.333328247070300000
-            Size.Height = 52.500000000000000000
-          end
+        end
+        object LblLogin: TLabel
+          Align = Client
+          StyledSettings = [Family, Style, FontColor]
+          Size.Width = 500.000000000000000000
+          Size.Height = 32.756935119628910000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 20.000000000000000000
+          TextSettings.HorzAlign = Center
+          Text = 'Please Enter User ID...'
+          TabOrder = 1
+        end
+        object LblPinFeedback: TLabel
+          Align = Client
+          StyledSettings = [Family, FontColor]
+          Size.Width = 500.000000000000000000
+          Size.Height = 66.381843566894530000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 30.000000000000000000
+          TextSettings.HorzAlign = Center
+          Text = '_ _ _ _'
+          TabOrder = 2
         end
       end
     end
+  end
+  object SpeedButton1: TSpeedButton
+    Anchors = []
+    Position.X = 2.000000000000000000
+    Position.Y = 1.000000000000000000
+    Size.Width = 39.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'cleareditbutton'
+    Text = 'SpeedButton1'
+    OnClick = SpeedButton1Click
   end
 end

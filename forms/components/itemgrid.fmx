@@ -1,0 +1,23 @@
+object FrameItemGrid: TFrameItemGrid
+  Size.Width = 600.000000000000000000
+  Size.Height = 600.000000000000000000
+  Size.PlatformDefault = False
+  object FlowLayout1: TFlowLayout
+    Align = Client
+    Size.Width = 600.000000000000000000
+    Size.Height = 600.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Justify = Left
+    JustifyLastLine = Left
+    FlowDirection = LeftToRight
+    object SpeedButton9: TSpeedButton
+      Size.Width = 80.000000000000000000
+      Size.Height = 70.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'cornerbuttonstyle'
+      Text = 'SpeedButton1'
+      TextSettings.WordWrap = True
+    end
+  end
+end
